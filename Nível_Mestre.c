@@ -56,8 +56,8 @@ int main(){
     calculoDensidade1 = (float) populacao1 / area1; //Calcula a dendidade populacional, dividindo a variavel populacao1 pela variavel area2
     calculoPIB2 = (float) (PIB2 * 1000000000) / populacao2; //Calcula o PIB per Capita, dividindo a variavel PIB2 pela variavel populacao2
     calculoDensidade2 = (float) populacao2/area2; //Calcula a dendidade populacional, dividindo a variavel populacao1 pela variavel area2
-    superPoder1 = populacao1 + area1 + PIB1 + calculoPIB1 + ((calculoDensidade1 * (-1))) + p_turisticos1;
-    superPoder2 = populacao2 + area2 + PIB2 + calculoPIB2 + ((calculoDensidade2 * (-1))) + p_turisticos2;
+    superPoder1 = populacao1 + area1 + PIB1 + calculoPIB1 + ((calculoDensidade1 * (-1))) + p_turisticos1; //Calcula o super poder da carta1
+    superPoder2 = populacao2 + area2 + PIB2 + calculoPIB2 + ((calculoDensidade2 * (-1))) + p_turisticos2; //Calcula o super poder da carta2
 
     printf("Carta 1:\n");
     printf("Estado: %c\n", estado1); //Imprime o Estado da carta 1 digitado pelo usuário com 1 letra 
@@ -69,7 +69,7 @@ int main(){
     printf("Número de Pontos Turísticos: %d\n", p_turisticos1); //Imprime o número de pontos turísticos da carta 1 digitado pelo usuário com um número inteiro
     printf("Densidade Populacional: %.2f hab/km²\n", calculoDensidade1); //Imprime o resultado do calculo da densidade populacional da carta 1
     printf("PIB per Capita: %.2f reais\n", calculoPIB1); //Imprime o resultado do calculo do PIB per Capita da carta 1
-    printf("Super Poder: %.2f\n", superPoder1);
+    printf("Super Poder: %.2f\n", superPoder1); //Imprime o rsultado do calculo do super poder da carta 1
     
 
     printf("Carta 2:\n");
@@ -82,16 +82,16 @@ int main(){
     printf("Número de Pontos Turísticos: %d\n", p_turisticos2); //Imprime o número de pontos turísticos da carta 2 digitado pelo usuário com um número inteiro
     printf("Densidade Populacional: %.2f hab/km²\n", calculoDensidade2); //Imprime o resultado do calculo da densidade populacional da carta 2
     printf("PIB per Capita: %.2f reais\n", calculoPIB2); //Imprime o resultado do calculo do PIB per Capita da carta 2
-    printf("Super Poder: %.2f\n", superPoder2);
+    printf("Super Poder: %.2f\n", superPoder2); //Imprime o rsultado do calculo do super poder da carta 2
 
     printf("***Comparação***\n");
-    printf("A população da carta 1 é maior do que a população da carta 2? %d\n", populacao1 > populacao2);
-    printf("A área da carta 1 é maior do que a área da carta 2? %d\n", area1 > area2);
-    printf("O PIB da carta 1 é maior do que o PIB da carta 2? %d\n", PIB1 > PIB2);
-    printf("Os pontos turísticos da carta 1 é maior do que os pontos turisticos da carta 2? %d\n", p_turisticos1 > p_turisticos2);
-    printf("A densidade populacional da carta 1 é menor do que a densidade populacional da carta 2? %d\n", calculoDensidade1 < calculoDensidade2);
-    printf("O PIB per Capita da carta 1 é maior do que o PIB per Capita da carta 2? %d\n", calculoPIB1 > calculoPIB2);
-    printf("O Super Poder da carta 1 é maior do que o Super Poder da carta 2? %d\n", superPoder1 > superPoder2);
+    printf("A população da carta 1 é maior do que a população da carta 2? %d\n", populacao1 > populacao2); //Compara a quantidade da população da carta 1 com a da carta 2, se o valor da carta 1 for maior imprime o número de 1, se for menor imprime o número 0
+    printf("A área da carta 1 é maior do que a área da carta 2? %d\n", area1 > area2); //Compara a quantidade da área da carta 1 com a da carta 2, se o valor da carta 1 for maior imprime o número de 1, se for menor imprime o número 0
+    printf("O PIB da carta 1 é maior do que o PIB da carta 2? %d\n", PIB1 > PIB2); //Compara a quantidade do PIB da carta 1 com o da carta 2, se o valor da carta 1 for maior imprime o número de 1, se for menor imprime o número 0
+    printf("Os pontos turísticos da carta 1 é maior do que os pontos turisticos da carta 2? %d\n", p_turisticos1 > p_turisticos2); //Compara a quantidade dos pontos turisticos da carta 1 com os da carta 2, se o valor da carta 1 for maior imprime o número de 1, se for menor imprime o número 0
+    printf("A densidade populacional da carta 1 é menor do que a densidade populacional da carta 2? %d\n", calculoDensidade1 < calculoDensidade2); //Compara o resultado do calculo de densidade populacional da carta 1 com o da carta 2, se o valor da carta 1 for menor imprime o número de 1, se for maior imprime o número 0
+    printf("O PIB per Capita da carta 1 é maior do que o PIB per Capita da carta 2? %d\n", calculoPIB1 > calculoPIB2); //Compara o resultado do calculo do PIN da carta 1 com o da carta 2, se o valor da carta 1 for maior imprime o número de 1, se for menor imprime o número 0
+    printf("O Super Poder da carta 1 é maior do que o Super Poder da carta 2? %d\n", superPoder1 > superPoder2); //Compara o resultado do calculo do Super Poder da carta 1 com o da carta 2, se o valor da carta 1 for maior imprime o número de 1, se for menor imprime o número 0
     printf("***A carta que tiver mais pontos (1) venceu!***\n");
 
     return 0;
